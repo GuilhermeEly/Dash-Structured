@@ -4,7 +4,7 @@ server = 'nobrpoaerp01'
 database = 'FPY' 
 username = 'FPY' 
 password = 'FPY@2020!' 
-cnxn = pyodbc.connect('DRIVER={SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
+cnxn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
 cursor = cnxn.cursor()
 
 df_update_data = pd.read_sql_query(

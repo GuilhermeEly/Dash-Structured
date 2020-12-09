@@ -15,7 +15,7 @@ def get_timeseries_by_PA(start_date, end_date, PA, Filterx):
     database = 'FPY' 
     username = 'FPY' 
     password = 'FPY@2020!' 
-    conn = pyodbc.connect('DRIVER={SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
+    conn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
 
     df_update_data = pd.read_sql_query(
             """
