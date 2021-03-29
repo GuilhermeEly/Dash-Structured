@@ -11,7 +11,7 @@ def get_fpy_geral(start_date, end_date, PA_selection, limit_High, limit_Low):
     start_date = start_date.replace('-', '')
     end_date = end_date.replace('-', '')
 
-    server = 'nobrpoaerp01' 
+    server = 'nobrcasql01' 
     database = 'FPY' 
     username = 'FPY' 
     password = 'FPY@2020!' 
